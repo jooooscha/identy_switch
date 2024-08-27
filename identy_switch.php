@@ -493,12 +493,12 @@ class identy_switch extends identy_switch_prefs
 			self::set('config', 'fp', $cfg['fp'] = 0);
 		}
 
-		// Feature disabled?
-		if (!$cfg['check'])
-		{
-			self::write_log('New mail check disabled - stop checking', true);
-			return $args;
-		}
+		// // Feature disabled?
+		// if (!$cfg['check'])
+		// {
+		//     self::write_log('New mail check disabled - stop checking', true);
+		//     return $args;
+		// }
 
 		// Only allow call under special conditions
 		if (!isset($args['action']) || ($args['action'] != 'refresh' && $args['action'] != 'getunread'))
